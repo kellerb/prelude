@@ -21,6 +21,15 @@
 (add-to-list 'grep-find-ignored-directories "external")
 
 
+; cmake-ide
+(require 'rtags) ;; optional, must have rtags installed
+(require 'auto-complete-clang)
+(setq ac-quick-help-delay 0.5)
+(define-key c-mode-base-map (kbd "<C-tab>") (function company-complete))
+(define-key c-mode-base-map (kbd "M-.") 'rtags-find-symbol-at-point)
+(define-key c-mode-base-map (kbd "M-*") 'rtags-location-stack-back)
+(setq rtags-use-helm t)
+(cmake-ide-setup)
 
 
 ; point at beginning of match during forward search

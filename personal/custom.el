@@ -8,6 +8,13 @@
  '(fci-rule-color "#383838")
  '(grep-find-template "find . <X> -type f <F> -exec grep <C> -nHI -e <R> {} +")
  '(haskell-process-type (quote stack-ghci))
+ '(safe-local-variable-values
+   (quote
+    ((cmake-ide-build-dir . "/home/kellerb/build/training-api-plugin")
+     (cmake-ide-build-dir . "/home/kellerb/build/storage-balancing")
+     (cmake-ide-build-dir . "/home/kellerb/jebbs/build")
+     (cmake-ide-build-dir . "/home/kellerb/build/icommands-debug-rip")
+     (cmake-ide-build-dir . "/home/kellerb/build/irods-debug"))))
  '(sp-autoinsert-pair nil)
  '(vc-annotate-background "#2B2B2B")
  '(vc-annotate-color-map
